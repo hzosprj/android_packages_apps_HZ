@@ -1,4 +1,4 @@
-package com.nitrogen.settings.fragments;
+package com.hz.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -41,7 +41,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.nitrogen_settings_statusbar);
+        addPreferencesFromResource(R.xml.hz_settings_statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -55,7 +55,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.HZ_SETTINGS;
     }
 
 }

@@ -16,7 +16,7 @@
  *
  */
 
-package com.nitrogen.settings.fragments;
+package com.hz.settings.fragments;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -44,7 +44,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.nitrogen_settings_button);
+        addPreferencesFromResource(R.xml.hz_settings_button);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }
@@ -57,7 +57,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.HZ_SETTINGS;
     }
 
 }
